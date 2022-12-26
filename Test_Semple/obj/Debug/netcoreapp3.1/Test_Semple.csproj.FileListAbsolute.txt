@@ -1,0 +1,14 @@
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\bin\Debug\netcoreapp3.1\Test_Semple.exe
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\bin\Debug\netcoreapp3.1\Test_Semple.deps.json
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\bin\Debug\netcoreapp3.1\Test_Semple.runtimeconfig.json
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\bin\Debug\netcoreapp3.1\Test_Semple.runtimeconfig.dev.json
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\bin\Debug\netcoreapp3.1\Test_Semple.dll
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\bin\Debug\netcoreapp3.1\Test_Semple.pdb
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\obj\Debug\netcoreapp3.1\Test_Semple.csproj.AssemblyReference.cache
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\obj\Debug\netcoreapp3.1\Test_Semple.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\obj\Debug\netcoreapp3.1\Test_Semple.AssemblyInfoInputs.cache
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\obj\Debug\netcoreapp3.1\Test_Semple.AssemblyInfo.cs
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\obj\Debug\netcoreapp3.1\Test_Semple.csproj.CoreCompileInputs.cache
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\obj\Debug\netcoreapp3.1\Test_Semple.dll
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\obj\Debug\netcoreapp3.1\Test_Semple.pdb
+D:\C#\Курсы TMS\Практика\Test_Semple\Test_Semple\obj\Debug\netcoreapp3.1\Test_Semple.genruntimeconfig.cache
