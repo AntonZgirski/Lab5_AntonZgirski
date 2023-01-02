@@ -5,8 +5,9 @@ using System.Text;
 namespace Test_Semple
 {
   public class Communication
-  {   
+  {  
     public List<Phone> phones = new List<Phone>();
+
     public void Create(string name, string phone, double price, int size, double diag)
     {
       phones.Add(new Phone(name, phone, price, size, diag));
@@ -90,14 +91,6 @@ namespace Test_Semple
     {
       return $"Brand Phone {BrandName}. Model Phone {ModelPhone}. Price {String.Format("{0:f2}", Price)}. Memory size {MemorySize}." +
              $"Screen diagonal {ScreenDiagonal}.";
-    }
-  }
-
-  public class WriteConsole
-  {
-    public void Print(string st)
-    {
-      Console.WriteLine(st);
     }
   }
 }
