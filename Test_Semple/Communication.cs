@@ -5,13 +5,16 @@ using System.Text;
 namespace Test_Semple
 {
   public class Communication
-  {  
+  {
     public List<Phone> phones = new List<Phone>();
+    private const int MaxValue = 5;
 
     public void Create(string name, string phone, double price, int size, double diag)
     {
+      if (phones.Count > MaxValue) throw new OverFlowException("The list is full!");
       phones.Add(new Phone(name, phone, price, size, diag));
-    }
+    }    
+
     public string Read(int i)
     {
       return phones[i].ToString();
@@ -93,4 +96,26 @@ namespace Test_Semple
              $"Screen diagonal {ScreenDiagonal}.";
     }
   }
+
+  public class NotFoundException : Exception
+  {
+    public NotFoundException(string message) : base(message)
+    {
+      NotFoundExceptionMessage = message;
+    }
+
+    public string NotFoundExceptionMessage { get; set; }
+  }
+
+  public class OverFlowException : Exception
+  {
+    public OverFlowException(string message) : base(message)
+    {
+      OverFlowExceptionMessage = message;
+    }
+
+    public string OverFlowExceptionMessage { get; set; }
+  }
+
+
 }
