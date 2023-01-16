@@ -17,16 +17,38 @@ namespace Test_Semple
 
     public string Read(int i)
     {
-      return phones[i].ToString();
+      try
+      {
+        return phones[i].ToString();
+      }
+      catch
+      {
+        throw new ReadNotFoundException($"Reading is not possible! No record number {i}");
+      }      
     }
+
     public void Update(double price, int i)
     {
-      var phone = phones[i];
-      phone.Price = price;
+      try
+      {
+        var phone = phones[i];
+        phone.Price = price;
+      }
+      catch
+      {
+        throw new UpdateNotFoundException($"Updating is not possible! No record number {i}");
+      }
     }
     public void Delete(int i)
     {
-      phones.RemoveAt(i);
+      try
+      {
+        phones.RemoveAt(i);
+      }
+      catch
+      {
+        throw new DeleteNotFoundException($"Deleting is not possible! No record number {i}");
+      }
     }
 
     public string ReadAll()
@@ -106,6 +128,37 @@ namespace Test_Semple
 
     public string NotFoundExceptionMessage { get; set; }
   }
+
+  public class DeleteNotFoundException : Exception
+  {
+    public DeleteNotFoundException(string message) : base(message)
+    {
+      DeleteNotFoundExceptionMessage = message;
+    }
+
+    public string DeleteNotFoundExceptionMessage { get; set; }
+  }
+
+  public class UpdateNotFoundException : Exception
+  {
+    public UpdateNotFoundException(string message) : base(message)
+    {
+      UpdateNotFoundExceptionMessage = message;
+    }
+
+    public string UpdateNotFoundExceptionMessage { get; set; }
+  }
+
+  public class ReadNotFoundException : Exception
+  {
+    public ReadNotFoundException(string message) : base(message)
+    {
+      ReadNotFoundExceptionMessage = message;
+    }
+
+    public string ReadNotFoundExceptionMessage { get; set; }
+  }
+
 
   public class OverFlowException : Exception
   {

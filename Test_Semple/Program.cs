@@ -18,20 +18,37 @@ namespace Test_Semple
         //com.Create("Sony Ericson", "k750i", 1.00, 1, 1.5);
         //com.Create("Samsung", "S8", 120.00, 64, 5.8);      
         del.Invoke(com.ReadAll());
-        del.Invoke(com.Read(3));
+        del.Invoke(com.Read(10));
 
-        com.Update(150.0, 8);
-        com.Delete(8);
+        com.Update(150.0, 4);
+        com.Delete(5);
         del.Invoke(com.ReadAll());
         del.Invoke(com.PopularBrand());
       }
       catch(OverFlowException ex)
       {
-        throw;
+        Console.WriteLine(ex.OverFlowExceptionMessage);
+        //throw;
       }
-      catch(Exception ex)
+      catch(DeleteNotFoundException ex)
       {
-        throw new NotFoundException("Not found record number 8.");
+        Console.WriteLine(ex.DeleteNotFoundExceptionMessage);
+        //throw;
+      }
+      catch (NotFoundException ex)
+      {
+        Console.WriteLine(ex.NotFoundExceptionMessage);
+        //throw;
+      }
+      catch (UpdateNotFoundException ex)
+      {
+        Console.WriteLine(ex.UpdateNotFoundExceptionMessage);
+        //throw;
+      }
+      catch (ReadNotFoundException ex)
+      {
+        Console.WriteLine(ex.ReadNotFoundExceptionMessage);
+        //throw;
       }
 
     }
